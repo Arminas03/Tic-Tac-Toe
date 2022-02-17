@@ -1,0 +1,381 @@
+/*=============
+  == Variables ==
+  =============*/
+
+/*-- Colours --*/
+:root {
+    --bg-color: #5CDB95;
+    --primary-color: #379683;
+    --secondary-color: #05386B;
+    --lighter-primary-color: #8EE4AF;
+    --light-color: #EDF5E1;
+}
+
+/*-- Media Queries --*/
+
+@media (max-width: 375px) {
+    :root {
+        --game-container-size: 200px;
+        --turn-tracker-container-height: 100px;
+        --turn-tracker-container-width: 100%;
+        --turn-tracker-font-size: 20px;
+        --turn-tracker-left: 0px;
+        --turn-tracker-padding-top: 50px;
+        --game-end-container-height: 100px;
+        --game-end-container-width: 100%;
+        --game-end-container-right: 0px;
+        --game-outcome-height: 100px;
+        --game-outcome-width: 200px;
+        --restart-button-height: 40px;
+        --restart-button-width: 100px;
+        --restart-button-font-size: 15px;
+        --line-length: 180px;
+        --box-font-size: 40px;
+        --border-size: 1px;
+        --game-container-border-size: 15px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 425px) {
+    :root {
+        --game-container-size: 250px;
+        --turn-tracker-container-height: 100px;
+        --turn-tracker-container-width: 100%;
+        --turn-tracker-font-size: 20px;
+        --turn-tracker-left: 0px;
+        --turn-tracker-padding-top: 50px;
+        --game-end-container-height: 100px;
+        --game-end-container-width: 100%;
+        --game-end-container-right: 0px;
+        --game-outcome-height: 100px;
+        --game-outcome-width: 200px;
+        --restart-button-height: 40px;
+        --restart-button-width: 100px;
+        --restart-button-font-size: 15px;
+        --line-length: 220px;
+        --box-font-size: 50px;
+        --border-size: 1px;
+        --game-container-border-size: 15px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+    :root {
+        --game-container-size: 300px;
+        --turn-tracker-container-height: 100px;
+        --turn-tracker-container-width: 100%;
+        --turn-tracker-font-size: 20px;
+        --turn-tracker-left: 0px;
+        --turn-tracker-padding-top: 50px;
+        --game-end-container-height: 100px;
+        --game-end-container-width: 100%;
+        --game-end-container-right: 0px;
+        --game-outcome-height: 100px;
+        --game-outcome-width: 200px;
+        --restart-button-height: 40px;
+        --restart-button-width: 100px;
+        --restart-button-font-size: 15px;
+        --line-length: 250px;
+        --box-font-size: 60px;
+        --border-size: 1px;
+        --game-container-border-size: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    :root {
+        --game-container-size: 400px;
+        --turn-tracker-container-height: 400px;
+        --turn-tracker-container-width: 100px;
+        --turn-tracker-font-size: 20px;
+        --turn-tracker-left: 30px;
+        --turn-tracker-padding-top: 100px;
+        --game-end-container-height: 400px;
+        --game-end-container-width: 80px;
+        --game-end-container-right: 0px;
+        --game-outcome-height: 100px;
+        --game-outcome-width: 200px;
+        --restart-button-height: 40px;
+        --restart-button-width: 100px;
+        --restart-button-font-size: 15px;
+        --line-length: 350px;
+        --box-font-size: 60px;
+        --border-size: 1px;
+        --game-container-border-size: 15px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    :root {
+        --game-container-size: 500px;
+        --turn-tracker-container-height: 500px;
+        --turn-tracker-container-width: 100px;
+        --turn-tracker-font-size: 23px;
+        --turn-tracker-left: 70px;
+        --turn-tracker-padding-top: 120px;
+        --game-end-container-height: 500px;
+        --game-end-container-width: 100px;
+        --game-end-container-right: 20px;
+        --game-outcome-height: 100px;
+        --game-outcome-width: 200px;
+        --restart-button-height: 40px;
+        --restart-button-width: 100px;
+        --restart-button-font-size: 15px;
+        --line-length: 400px;
+        --box-font-size: 80px;
+        --border-size: 1px;
+        --game-container-border-size: 20px;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 2560px) {
+    :root {
+        --game-container-size: 600px;
+        --turn-tracker-container-height: 600px;
+        --turn-tracker-container-width: 200px;
+        --turn-tracker-font-size: 30px;
+        --turn-tracker-left: 100px;
+        --turn-tracker-padding-top: 150px;
+        --game-end-container-height: 600px;
+        --game-end-container-width: 100px;
+        --game-end-container-right: 100px;
+        --game-outcome-height: 100px;
+        --game-outcome-width: 200px;
+        --restart-button-height: 60px;
+        --restart-button-width: 180px;
+        --restart-button-font-size: 20px;
+        --line-length: 500px;
+        --box-font-size: 100px;
+        --border-size: 1px;
+        --game-container-border-size: 20px;
+    }
+}
+
+@media (min-width: 2560px) {
+    :root {
+        --game-container-size: 1000px;
+        --turn-tracker-container-height: 1000px;
+        --turn-tracker-container-width: 400px;
+        --turn-tracker-font-size: 55px;
+        --turn-tracker-left: 100px;
+        --turn-tracker-padding-top: 200px;
+        --game-end-container-height: 1000px;
+        --game-end-container-width: 200px;
+        --game-end-container-right: 100px;
+        --game-outcome-height: 100px;
+        --game-outcome-width: 200px;
+        --restart-button-height: 100px;
+        --restart-button-width: 300px;
+        --restart-button-font-size: 40px;
+        --line-length: 800px;
+        --box-font-size: 180px;
+        --border-size: 2px;
+        --game-container-border-size: 20px;
+    }
+}
+
+
+
+/*=============
+  == General ==
+  =============*/
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--bg-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+@media (max-width: 767px) {
+    body {
+        flex-direction: column;
+    }
+}
+
+
+/*=============
+  == Layout ==
+  =============*/
+
+/*-- Turn Tracker Container --*/
+
+.turnTrackerContainer {
+    position: absolute;
+    height: var(--turn-tracker-container-height);
+    width: var(--turn-tracker-container-width);
+    left: var(--turn-tracker-left);
+    padding-top: var(--turn-tracker-padding-top);
+}
+
+.turnTracker {
+    position: relative;
+    text-align: center;
+    color: var(--light-color);
+    font-size: var(--turn-tracker-font-size);
+    font-style: italic;
+}
+
+@media (max-width: 767px) {
+    .turnTrackerContainer {
+        top: 0;
+    }
+}
+
+/* -- Main Game Container --*/
+
+.gameContainer {
+    position: relative;
+    height: var(--game-container-size);
+    width: var(--game-container-size);
+    background-color: var(--primary-color);
+    border: var(--game-container-border-size) solid var(--primary-color);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    user-select: none;
+}
+
+.box4,
+.box5,
+.box6,
+.box7,
+.box8,
+.box9 {
+    border-top: var(--border-size) solid var(--light-color);
+}
+.box1,
+.box2,
+.box4,
+.box5,
+.box7,
+.box8 {
+    border-right: var(--border-size) solid var(--light-color);
+}
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+    border-bottom: var(--border-size) solid var(--light-color);
+}
+.box2,
+.box3,
+.box5,
+.box6,
+.box8,
+.box9 {
+    border-left: var(--border-size) solid var(--light-color);
+}
+
+.box {
+    position: relative;
+    color: var(--secondary-color);
+    font-size: var(--box-font-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontalLine,
+.verticalLine,
+.obliqueToRightLine,
+.obliqueToLeftLine {
+    position: absolute;
+    height: var(--line-length);
+    width: var(--line-length);
+    border-right: none;
+    z-index: 2;
+}
+.verticalLine {
+    transform: rotate(90deg);
+}
+.obliqueToRightLine {
+    transform: rotate(45deg);
+    width: calc(var(--line-length) * 1.4142135623730950488016887242097);
+}
+.obliqueToLeftLine {
+    transform: rotate(315deg);
+    width: calc(var(--line-length) * 1.4142135623730950488016887242097);
+}
+
+/*-- Game End Container --*/
+
+.gameEndContainer {
+    position: absolute;
+    height: var(--game-end-container-height);
+    width: var(--game-end-container-width);
+    right: var(--game-end-container-right);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.gameOutcome {
+    position: relative;
+    height: var(--game-outcome-height);
+    width: var(--game-outcome-width);
+    color: var(--light-color);
+    font-size: var(--turn-tracker-font-size);
+    font-style: italic;
+    margin: auto;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.restartButton {
+    position: relative;
+    height: var(--restart-button-height);
+    width: var(--restart-button-width);
+    margin: auto;
+    transform: translate(-50%, -50%);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 10px;
+    color: var(--lighter-primary-color);
+    font-size: var(--restart-button-font-size);
+}
+.restartButton:hover {
+    color: var(--primary-color);
+    background-color: var(--lighter-primary-color);
+    transition-duration: 0.5s;
+}
+
+@media (max-width: 767px) {
+    .gameEndContainer {
+        bottom: 20px;
+    }
+    .gameEndContainer > * {
+        margin: 0;
+        transform: translate(0, 0);
+    }
+}
+
+
+/*=============
+  == Utility ==
+  =============*/
+
+button:hover {
+    cursor: pointer;
+}
+
+.mouseover {
+    color: rgba(5, 56, 107, 0.3);
+}
+
+.hide {
+    display: none;
+}
