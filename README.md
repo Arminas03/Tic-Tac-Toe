@@ -1,1 +1,1 @@
-A simple project that proves that I understand some HTML, JavaScript and CSS
+A simple project using HTML, JavaScript and CSS
